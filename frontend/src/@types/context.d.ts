@@ -1,9 +1,12 @@
+// frontend/src/@types/context.ts
 export interface Entry {
   id?: string;
   title: string;
   description: string;
   created_at: Date | string;
+  scheduled_at?: Date | string | null; 
 }
+
 export type EntryContextType = {
   entries: Entry[];
   saveEntry: (entry: Entry) => void;

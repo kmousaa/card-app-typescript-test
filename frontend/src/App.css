@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* App.css */
+/* App.css */
+
+:root {
+    --background-color: #ffffff;
+    --card: #cbd5e1;
+    --button: #60a5fa;
+    --button-hover: #3b82f6;
+    --text: #000000;
+    --inside-card: #ffffff;
+    --inside-text: #000000;
+    --delete: #ef4444;
+    --delete-hover: #dc2626;
+  }
+  
+  .light {
+    --background-color: #ffffff;
+    --card: #cbd5e1;
+    --button: #60a5fa;
+    --button-hover: #3b82f6;
+    --text: #000000;
+    --inside-card: #ffffff;
+    --inside-text: #000000;
+    --delete: #ef4444;
+    --delete-hover: #dc2626;
+  }
+  
+  .dark {
+    --background-color: #000000;
+    --card: #1a202c;
+    --button: #dc2626;
+    --button-hover: #b91c1c;
+    --button-hover-darker: #7f1d1d;
+    --text: #ffffff;
+    --inside-card: #1a202c;
+    --inside-text: #ffffff;
+    --delete: #b91c1c;
+    --delete-hover: #7f1d1d;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text);
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text);
+  }
+  
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button);
+    color: var(--text);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  .toggle-text {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
