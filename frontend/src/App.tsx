@@ -9,7 +9,7 @@ import './App.css';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
 export default function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
